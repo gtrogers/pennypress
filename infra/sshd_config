@@ -1,0 +1,8 @@
+Port 2022
+PermitRootLogin no
+PasswordAuthentication no
+LoginGraceTime 30s
+AuthorizedKeysFile /home/%u/.ssh/authorized_keys
+# This line is needed as PAM doesn't work in containers
+UsePAM no
+
